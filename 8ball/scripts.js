@@ -19,6 +19,8 @@ let responses = [
     'Outlook not so good.',
     'Very doubtful.'
 ];
+let eightBall = document.getElementById('eight');
+let answer = document.getElementById('answer');
 
 // Generate random number between 2 ints 
 function getRandomIntInclusive(min, max) {
@@ -31,6 +33,12 @@ function getRandomIntInclusive(min, max) {
 function getResponse() {
     return responses[getRandomIntInclusive(0, responses.length-1)];
 }
+
+eightBall.addEventListener('click', () => {
+    answer.innerText = getResponse();
+})
+
+
 
 
 
