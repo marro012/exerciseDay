@@ -19,7 +19,7 @@ let responses = [
     'Outlook not so good.',
     'Very doubtful.'
 ];
-let eightBall = document.getElementById('eight');
+let eightBall = document.getElementById('eight-ball');
 let answer = document.getElementById('answer');
 
 // Generate random number between 2 ints 
